@@ -1,0 +1,10 @@
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\bin\Debug\MiniAnalizadorLexico.exe.config
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\bin\Debug\MiniAnalizadorLexico.exe
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\bin\Debug\MiniAnalizadorLexico.pdb
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.csprojAssemblyReference.cache
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.Form1.resources
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.Properties.Resources.resources
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.csproj.GenerateResource.cache
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.csproj.CoreCompileInputs.cache
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.exe
+C:\Users\TARASCOS\Desktop\C#\Sem Traductores 2\MiniAnalizadorLexico\MiniAnalizadorLexico\obj\Debug\MiniAnalizadorLexico.pdb
