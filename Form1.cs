@@ -20,7 +20,8 @@ namespace MiniAnalizadorLexico
 
         private void BotonAnalizar_Click(object sender, EventArgs e)
         {
-
+            AnalizadorLexico anaLex = new AnalizadorLexico();
+            List<Token> listaTokens = anaLex.escanear(TextBoxEntrada.Text);
         }
     }
 }
