@@ -15,6 +15,12 @@ namespace MiniAnalizadorLexico
         public Form1()
         {
             InitializeComponent();
+            TextBoxEntrada.Text = "";
+        }
+
+        private void BotonAnalizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

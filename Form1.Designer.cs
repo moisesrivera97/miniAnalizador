@@ -42,6 +42,7 @@
             this.botonAnalizar.TabIndex = 0;
             this.botonAnalizar.Text = "Analizar";
             this.botonAnalizar.UseVisualStyleBackColor = true;
+            this.botonAnalizar.Click += new System.EventHandler(this.BotonAnalizar_Click);
             // 
             // TextBoxEntrada
             // 
