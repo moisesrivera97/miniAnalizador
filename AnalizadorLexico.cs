@@ -32,13 +32,23 @@ namespace MiniAnalizadorLexico
                         {
                             if (char.IsDigit(c))
                             {
-
+                                estado = 1;
+                                auxLex += c;
+                            }
+                            else if (char.IsLetter(c))
+                            {
+                                estado = 2;
+                                auxLex += c;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Solo se puede iniciar con un identificador o un número real");
                             }
                             break;
                         }
                 }
             }
-
+            MessageBox.Show("Analisis Léxico finalizado");
             return salida;
         }
 
