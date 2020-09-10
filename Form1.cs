@@ -16,6 +16,7 @@ namespace MiniAnalizadorLexico
         {
             InitializeComponent();
             TextBoxEntrada.Text = "";
+            dataGridViewTokens.Rows.Clear();
         }
 
         private void BotonAnalizar_Click(object sender, EventArgs e)
@@ -25,7 +26,8 @@ namespace MiniAnalizadorLexico
 
             foreach (Token t in listaTokens)
             {
-                MessageBox.Show(t.getTipo().ToString() + ", " + t.getValor().ToString());
+                dataGridViewTokens.Rows.Clear();
+                dataGridViewTokens.Rows.Add(t.getTipo().ToString(), t.getValor().ToString());
             }
         }
     }
