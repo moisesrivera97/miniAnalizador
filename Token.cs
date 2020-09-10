@@ -12,7 +12,6 @@ namespace MiniAnalizadorLexico
         {
             REAL,
             IDENTIFICADOR,
-            SIMBOLO_ASIGNACION
         }
 
         private Tipo tipoToken;

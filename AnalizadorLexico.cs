@@ -22,7 +22,7 @@ namespace MiniAnalizadorLexico
             auxLex = "";
             char c;
 
-            for(int i = 0; i < entrada.Length - 1; i++)
+            for(int i = 0; i <= entrada.Length - 1; i++)
             {
                 c = entrada[i];
 
@@ -42,13 +42,77 @@ namespace MiniAnalizadorLexico
                             }
                             else
                             {
-                                MessageBox.Show("Solo se puede iniciar con un identificador o un número real");
+                                MessageBox.Show("Error léxico, Solo se puede iniciar con un identificador o un número real");
+                            }
+                            break;
+                        }
+                    case 1:
+                        {
+                            if(c.ToString() == ".")
+                            {
+                                estado = 3;
+                                auxLex += c;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error léxico, Solo se permite un número entero con punto decimal");
+                                goto endProgram;
+                            }
+                            break;
+                        }
+                    case 2:
+                        {
+                            if(c.ToString() == "#" && i == entrada.Length - 1)
+                            {
+                                addToken(Token.Tipo.IDENTIFICADOR);
+                                MessageBox.Show("Analizador léxico terminado");
+                            }
+                            else if(char.IsLetter(c) || char.IsDigit(c))
+                            {
+                                auxLex += c;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error léxico, los identificadores solo pueden contener letras y números");
+                                goto endProgram;
+                            }
+                            break;
+                        }
+                    case 3:
+                        {
+                            if (char.IsDigit(c))
+                            {
+                                estado = 4;
+                                auxLex += c;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error léxico, Se requiere al menos un número entero después del punto");
+                                goto endProgram;
+                            }
+                            break;
+                        }
+                    case 4:
+                        {
+                            if (c.ToString() == "#" && i == entrada.Length - 1)
+                            {
+                                addToken(Token.Tipo.REAL);
+                                MessageBox.Show("Analizador léxico terminado");
+                            }
+                            else if(char.IsDigit(c))
+                            {
+                                auxLex += c;
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error léxico, los números reales solo permiten números");
+                                goto endProgram;
                             }
                             break;
                         }
                 }
             }
-            MessageBox.Show("Analisis Léxico finalizado");
+            endProgram:
             return salida;
         }
 

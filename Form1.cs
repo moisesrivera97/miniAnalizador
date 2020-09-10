@@ -22,6 +22,11 @@ namespace MiniAnalizadorLexico
         {
             AnalizadorLexico anaLex = new AnalizadorLexico();
             List<Token> listaTokens = anaLex.escanear(TextBoxEntrada.Text);
+
+            foreach (Token t in listaTokens)
+            {
+                MessageBox.Show(t.getTipo().ToString() + ", " + t.getValor().ToString());
+            }
         }
     }
 }
